@@ -5,9 +5,13 @@
 // 然後蓋過下面較晚載入的 SCSS 檔案 ( CSS 權重的關係 )
 @import './utils/variables';
 
-//相當於把 Boostrap5 中所有的 SCSS 檔載入進來
-@import "../../node_modules/bootstrap";
+@import "./utils/base"; // 全站樣式 img{}, body{}
+@import "./utils/mixin"; // mixin
+@import "./utils/font";  //文字自型、字體設定
 
+//相當於把 Boostrap5 中所有的 SCSS 檔載入進來
+// @import "../../node_modules/bootstrap";  //雪朱:下欄可以直接載入bootstrap，但不確定是否是要編一太久所以不載入先註解
+@import "../../node_modules/bootstrap/scss/bootstrap";
 //----------   以上是載入 Boostrap 5 的 Sass 主體 ----------
 
 //自訂 utility
@@ -17,6 +21,9 @@
 // layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
+
+// 首頁各個區塊
+@import './macro/share_use.scss';
 
 // pages
 @import './pages/index.scss';
