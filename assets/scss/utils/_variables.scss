@@ -310,6 +310,7 @@ $secondary:     #11002D !default;//customization
 $third:         #6E01F8;
 $fourth:        #380C7E;
 $fifth:         #1F0F39;
+$purple-dark:   #28085C;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -322,12 +323,16 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
+  "third":      $third,
+  "fourth":     $fourth,
+  "fifth":      $fifth,
   "success":    $success,
   "info":       $info,
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "purple-dark":$purple-dark
 ) !default;
 // scss-docs-end theme-colors-map
 

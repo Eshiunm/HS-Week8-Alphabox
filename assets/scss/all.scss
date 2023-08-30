@@ -14,6 +14,7 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 //----------   以上是載入 Boostrap 5 的 Sass 主體 ----------
 
+
 //自訂 utility
 @import './layout/utility.scss';
 
@@ -24,6 +25,7 @@
 
 // 首頁各個區塊
 @import './macro/share_use.scss';
+@import './macro/news.scss';
 
 // pages
 @import './pages/index.scss';
