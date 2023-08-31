@@ -1,3 +1,9 @@
 .bg-primary-dark{
-    background-color: $purple-dark;
+    // 使用範例
+    @include radial-gradient(#28085c, #000000);
+}
+
+.icon-24{
+    width: 24px;
+    height: 24px;
 }

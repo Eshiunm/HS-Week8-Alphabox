@@ -10,3 +10,11 @@
         @content;
   }
 }
+
+//background
+@mixin radial-gradient(
+  $start-color: $primary,
+  $end-color: $secondary,
+) {
+  background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
+}

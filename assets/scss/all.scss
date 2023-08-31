@@ -11,6 +11,7 @@
 
 //相當於把 Boostrap5 中所有的 SCSS 檔載入進來
 // @import "../../node_modules/bootstrap";  //雪朱:下欄可以直接載入bootstrap，但不確定是否是要編一太久所以不載入先註解
+@import "../../node_modules/bootstrap/scss/functions";//這個要優先載入，不可以亂動
 @import "../../node_modules/bootstrap/scss/bootstrap";
 //----------   以上是載入 Boostrap 5 的 Sass 主體 ----------
 
