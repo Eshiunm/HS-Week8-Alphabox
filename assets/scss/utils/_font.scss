@@ -109,6 +109,9 @@ h1{
 .text-right{
     text-align: right;
 }
+.text-justify{
+    text-align: justify;
+}
 
 
 /* font weight */
@@ -137,12 +140,12 @@ h1{
     font-style: regular;
 }
 
-
-/* line-height */
-
-.lh-1{
-    line-height: 1;
+// letter-space 文字間距
+.ls-20{
+    letter-spacing: 20px;
 }
-.lh-2{
-    line-height: 1.2;
+// 首頁日期間距 230-160(16文字大小x10個字)=70，70/9=7.7...
+.ls-7{
+    letter-spacing: 7px;
 }
+
