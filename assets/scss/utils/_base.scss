@@ -1,8 +1,11 @@
 body {
-    // background-color: #28085C !important; //雪朱: 找不到是哪個檔案蓋掉body所以先important蓋掉顏色
-    line-height: 24px;
+    line-height: 24px !important;
 }
 
 img{
     vertical-align: middle;
+}
+
+a{
+    text-decoration: none !important;
 }
