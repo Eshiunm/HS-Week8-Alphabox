@@ -8,13 +8,16 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <%- include('./layout/google-font'); -%>
     <title>Alphabox 虛擬陪伴平台</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-
     
+    <%- include('./layout/product-banner'); -%>
+
+
 
     <!-- 使用分享區塊 -->
     <div class="bg-black-primary-gradient">
@@ -29,7 +32,7 @@
           <div class="share overflow-hidden">
             <div class="container">
               <!-- share swiper -->
-              <div class="swiper share-swiper d-md-block d-none vw-100">
+              <div class="swiper share-swiper vw-100">
                 <ul class="swiper-wrapper list-unstyled">
                   <li class="swiper-slide col-4">
                     <div class="share-card h-100 d-flex flex-column">

@@ -8,6 +8,7 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 24,
     slidesPerView: 3,
     // Scrollbar 滑鼠中鍵滾輪可滑動
+    //if we need scrollbar
     scrollbar: {
        el: '.swiper-scrollbar',
        draggable: true,
