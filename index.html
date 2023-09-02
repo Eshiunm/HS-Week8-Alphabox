@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <!-- Noto Sans CJK TC -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,57 +17,150 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans+TC:wght@700&family=Shrikhand&display=swap" rel="stylesheet">    <title>Alphabox 虛擬陪伴平台</title>
-    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-8b7a914f.js"></script>
-    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-446aa86c.css">
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-74aa73a0.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-1a888077.css">
   </head>
   <body>
     <h1 class="header">我是 header</h1>
 <a href="index.html">index</a>
 <a href="about.html">about</a>
 <a href="contact.html">contact</a>
-    <div class="container text-white mt-3">
-    <h2 class="mb-3">使用分享</h2>
-  </div>
-  <div class="overflow-hidden">
-    <div class="container">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide shareCard bg-primary-dark text-white">
-            <p>
-              ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
-            </p>
-          </div>
-          <div class="swiper-slide shareCard bg-white">
-            <p>
-              ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
-            </p>
-          </div>
-          <div class="swiper-slide shareCard bg-primary-dark text-white">
-            <p>
-              ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
-            </p>
-          </div>
-          <div class="swiper-slide shareCard bg-white">
-            <p>
-              ALPHABOX+ 真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
-            </p>
-          </div>
+    <div class="bg-primary-dark pt-10">
+    <div class="container text-white">
+        <h2 class="mb-3">最新消息</h2>
+        <div class="row">
+            <div class="col-12 border-top border-bottom">
+                <img class="image-fluid icon-24 mt-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALISURBVHgB7dvrkdowFAXgSyqgBEpICaSDLYEOQgeQCkgqcDpICS4hJdztgHRwIo28k42Hh6wrybL3fDP6B7I4IFkPI0JERERERPRhAVDEU2nEJyETBmjEAI0YoBEDNGKARgzQiAEaMUAjc4BuVXBwpXNlJwvh2+pK78pe5jZagl1Sg6yxlHPv27pystaTjWvA11sfzv8qZSIUDnBo6/VGXWeZA0I30EcfEhO6CAoF6NuA0F3v8aFupTaEcS+Gf90uoj5FvKcBInzBvyLru0hNQ+OmOj2pUyfUpQ/qeRvnrphmL7W4i/1GGsWd8REZAkSYESjS9FLD0EgrxahbwxAgno9zsV6kNKR/w7d0GIJEQoAI3bVDPoqSNxT8P4fK5TrUqxPeo0gb52KcpRTYxpglUNS4mWB9Qfpf8lFqQpjK/MTyfcccE+lRkLET1pb0rnyWVmA53VrRwi7MPa5xZ5S5O1r5Nvm2zdddY6G98bHDEoIbw/Mdm9J6tNxdY6H++Oi760HWBGHZdUZZ1ce52odKcOWPlOODw2azKXmN+lC/CyvW0IWRb5spld+33MnSIIx3F7Sjw1KCxP3Tr7kpam8YTIHQXRXtU9TYeY6Ff6f8S9Nhzm6N9NOv1pxQe5mH9W2oKhKnPZspL0ZYV/rz3b2s06srX9xE/DX2DVNXInspE943CY2P5VcaPyS/nSsHKQVh3Ms55vWwHWvm3jZTlL6xuAscYacYbTPBdrCea0w+SA1In7bcPf2CIcB3dRyRHmS9ZwURJs1TPTz9QoYAh3pSu3XdAybEn8T1iNgVRpnH2/rI+jqpbWjgoxuKoo0HLGPGx53MAbd3mJN2hUsFOGprO4/4Do3ajj54h7YfMh+Pj/P/79g14gUZTr9qBPjuWm+nhQdZi5oB5sR/KhkxQCMGaMQAjRigEQM0YoBGDNCIARIRERERES3OX7ow1n04qP9tAAAAAElFTkSuQmCC" alt="emergency">
+                <span class="text-base ls-7">2023.06.30</span>
+                <h5 class="ls-20">產品升級公告</h5>
+                <p class="mb-3">榮幸地宣布，ALPHABOX+ 已成功完成最新一代的升級！本次升級包括提升投影解析度、優化語音辨識技術，以及擴充情感識別功能。歡迎您了解本次升級帶來的更為卓越的性能！</p>
+            </div>
+            <div class="col-6  border-start border-end border-bottom gr-0">
+                <img class="image-fluid icon-24 mt-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALISURBVHgB7dvrkdowFAXgSyqgBEpICaSDLYEOQgeQCkgqcDpICS4hJdztgHRwIo28k42Hh6wrybL3fDP6B7I4IFkPI0JERERERPRhAVDEU2nEJyETBmjEAI0YoBEDNGKARgzQiAEaMUAjc4BuVXBwpXNlJwvh2+pK78pe5jZagl1Sg6yxlHPv27pystaTjWvA11sfzv8qZSIUDnBo6/VGXWeZA0I30EcfEhO6CAoF6NuA0F3v8aFupTaEcS+Gf90uoj5FvKcBInzBvyLru0hNQ+OmOj2pUyfUpQ/qeRvnrphmL7W4i/1GGsWd8REZAkSYESjS9FLD0EgrxahbwxAgno9zsV6kNKR/w7d0GIJEQoAI3bVDPoqSNxT8P4fK5TrUqxPeo0gb52KcpRTYxpglUNS4mWB9Qfpf8lFqQpjK/MTyfcccE+lRkLET1pb0rnyWVmA53VrRwi7MPa5xZ5S5O1r5Nvm2zdddY6G98bHDEoIbw/Mdm9J6tNxdY6H++Oi760HWBGHZdUZZ1ce52odKcOWPlOODw2azKXmN+lC/CyvW0IWRb5spld+33MnSIIx3F7Sjw1KCxP3Tr7kpam8YTIHQXRXtU9TYeY6Ff6f8S9Nhzm6N9NOv1pxQe5mH9W2oKhKnPZspL0ZYV/rz3b2s06srX9xE/DX2DVNXInspE943CY2P5VcaPyS/nSsHKQVh3Ms55vWwHWvm3jZTlL6xuAscYacYbTPBdrCea0w+SA1In7bcPf2CIcB3dRyRHmS9ZwURJs1TPTz9QoYAh3pSu3XdAybEn8T1iNgVRpnH2/rI+jqpbWjgoxuKoo0HLGPGx53MAbd3mJN2hUsFOGprO4/4Do3ajj54h7YfMh+Pj/P/79g14gUZTr9qBPjuWm+nhQdZi5oB5sR/KhkxQCMGaMQAjRigEQM0YoBGDNCIARIRERERES3OX7ow1n04qP9tAAAAAElFTkSuQmCC" alt="emergency">
+                <span class="text-base ls-7">2023.06.30</span>
+                <h5 class="ls-20">限時優惠活動</h5>
+                <p class="mb-3">為答謝廣大用戶的支持，本月將舉辦一場限時優惠活動。訂閱 ALPHABOX+ 的顧客，皆可享受九折優惠。機會難得，請勿錯過此良機！</p>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAAAcCAYAAAD8+1StAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEoSURBVHgB7dpbbcNAEIXhcREEQiiUQSAUQiGEQVsETRAUQiG4DAphzSAQTmZlS87F8SoPiWel/5P2JVLejo48s2sGPICkdz9rA2qQw+on5eAaUAMP6069f9oW4XlIV34OGn0YEJmHdKtzibZFaENIL30TXITkwdxoWmIoQ0gezFa3/dC2CGVYc81JtC1C0bjmmsMKDDHoes01hxUYlqfrNVfpM2F9+v8m/2pAbDs/+6ZpOgKLWnR+vl4MqEdHYFGDvZ9X/yT4M+CZ1L+TvWfo2hiwBI1vZEvy6uvTgCWpv4ItacXFAZam8tVsbtWtAREU2vWXVkUYuj1oJTFUIRpND1r5IczKgEgm2pVWRUw6X2OxqkJsJ4NWy1CF0IZ2ZVWFOnhQ3x7RqkcPD7awGrMaIwAAAABJRU5ErkJggg==" alt="line_end_arrow_notch" class="image-fluid mb-10"></a>
+            </div>
+            <div class="col-6  border-start border-end border-bottom gl-0">
+                <img class="image-fluid icon-24 mt-3" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALISURBVHgB7dvrkdowFAXgSyqgBEpICaSDLYEOQgeQCkgqcDpICS4hJdztgHRwIo28k42Hh6wrybL3fDP6B7I4IFkPI0JERERERPRhAVDEU2nEJyETBmjEAI0YoBEDNGKARgzQiAEaMUAjc4BuVXBwpXNlJwvh2+pK78pe5jZagl1Sg6yxlHPv27pystaTjWvA11sfzv8qZSIUDnBo6/VGXWeZA0I30EcfEhO6CAoF6NuA0F3v8aFupTaEcS+Gf90uoj5FvKcBInzBvyLru0hNQ+OmOj2pUyfUpQ/qeRvnrphmL7W4i/1GGsWd8REZAkSYESjS9FLD0EgrxahbwxAgno9zsV6kNKR/w7d0GIJEQoAI3bVDPoqSNxT8P4fK5TrUqxPeo0gb52KcpRTYxpglUNS4mWB9Qfpf8lFqQpjK/MTyfcccE+lRkLET1pb0rnyWVmA53VrRwi7MPa5xZ5S5O1r5Nvm2zdddY6G98bHDEoIbw/Mdm9J6tNxdY6H++Oi760HWBGHZdUZZ1ce52odKcOWPlOODw2azKXmN+lC/CyvW0IWRb5spld+33MnSIIx3F7Sjw1KCxP3Tr7kpam8YTIHQXRXtU9TYeY6Ff6f8S9Nhzm6N9NOv1pxQe5mH9W2oKhKnPZspL0ZYV/rz3b2s06srX9xE/DX2DVNXInspE943CY2P5VcaPyS/nSsHKQVh3Ms55vWwHWvm3jZTlL6xuAscYacYbTPBdrCea0w+SA1In7bcPf2CIcB3dRyRHmS9ZwURJs1TPTz9QoYAh3pSu3XdAybEn8T1iNgVRpnH2/rI+jqpbWjgoxuKoo0HLGPGx53MAbd3mJN2hUsFOGprO4/4Do3ajj54h7YfMh+Pj/P/79g14gUZTr9qBPjuWm+nhQdZi5oB5sR/KhkxQCMGaMQAjRigEQM0YoBGDNCIARIRERERES3OX7ow1n04qP9tAAAAAElFTkSuQmCC" alt="emergency">
+                <span class="text-base ls-7">2023.04.18</span>
+                <h5 class="ls-20">新功能上線</h5>
+                <p class="mb-3">為使您的 ALPHABOX+ 更趨完善，我們不懈地研發創新功能。近期，我們新推出智慧家居控制功能，使您的機器人能更便利地協助您操作家中各類智能設備。</p>
+                <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAAAcCAYAAAD8+1StAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEoSURBVHgB7dpbbcNAEIXhcREEQiiUQSAUQiGEQVsETRAUQiG4DAphzSAQTmZlS87F8SoPiWel/5P2JVLejo48s2sGPICkdz9rA2qQw+on5eAaUAMP6069f9oW4XlIV34OGn0YEJmHdKtzibZFaENIL30TXITkwdxoWmIoQ0gezFa3/dC2CGVYc81JtC1C0bjmmsMKDDHoes01hxUYlqfrNVfpM2F9+v8m/2pAbDs/+6ZpOgKLWnR+vl4MqEdHYFGDvZ9X/yT4M+CZ1L+TvWfo2hiwBI1vZEvy6uvTgCWpv4ItacXFAZam8tVsbtWtAREU2vWXVkUYuj1oJTFUIRpND1r5IczKgEgm2pVWRUw6X2OxqkJsJ4NWy1CF0IZ2ZVWFOnhQ3x7RqkcPD7awGrMaIwAAAABJRU5ErkJggg==" alt="line_end_arrow_notch" class="image-fluid mb-10"></a>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-12 my-30">
+                <div class="position-relative">
+                    <a href="#" alt="ALPHABOX+" class="pt-3 text-white position-absolute top-50 start-50 translate-middle"><img src="data:image/png;base64,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" alt="ALPHABOX+" class="image-fluid position-absolute top-50 start-50 translate-middle">查看更多</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <p class="mt-5 text-right mb-0 pb-3">為環保盡一份心力，我們的包裝盒和紙質說明書都使用環保材料</p>
+    </div>
+</div>
+    <div class="bg-black-primary-gradient">
+  <div class="container text-white pt-3">
+    <div class="row align-items-center">
+      <div class="col-5">
+        <h2>使用分享</h2>
       </div>
-      <!-- Scrollbar -->
-      <div class="row align-items-center mt-5">
+      <div class="col-7">
+        <p>展示其他使用者對於產品的真實體驗與評價，讓您更加放心選擇。</p>
+      </div>
+    </div>
+    
+    <p class="font-noto font-bold text-base mb-3">01 - 04</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALISURBVHgB7dvrkdowFAXgSyqgBEpICaSDLYEOQgeQCkgqcDpICS4hJdztgHRwIo28k42Hh6wrybL3fDP6B7I4IFkPI0JERERERPRhAVDEU2nEJyETBmjEAI0YoBEDNGKARgzQiAEaMUAjc4BuVXBwpXNlJwvh2+pK78pe5jZagl1Sg6yxlHPv27pystaTjWvA11sfzv8qZSIUDnBo6/VGXWeZA0I30EcfEhO6CAoF6NuA0F3v8aFupTaEcS+Gf90uoj5FvKcBInzBvyLru0hNQ+OmOj2pUyfUpQ/qeRvnrphmL7W4i/1GGsWd8REZAkSYESjS9FLD0EgrxahbwxAgno9zsV6kNKR/w7d0GIJEQoAI3bVDPoqSNxT8P4fK5TrUqxPeo0gb52KcpRTYxpglUNS4mWB9Qfpf8lFqQpjK/MTyfcccE+lRkLET1pb0rnyWVmA53VrRwi7MPa5xZ5S5O1r5Nvm2zdddY6G98bHDEoIbw/Mdm9J6tNxdY6H++Oi760HWBGHZdUZZ1ce52odKcOWPlOODw2azKXmN+lC/CyvW0IWRb5spld+33MnSIIx3F7Sjw1KCxP3Tr7kpam8YTIHQXRXtU9TYeY6Ff6f8S9Nhzm6N9NOv1pxQe5mH9W2oKhKnPZspL0ZYV/rz3b2s06srX9xE/DX2DVNXInspE943CY2P5VcaPyS/nSsHKQVh3Ms55vWwHWvm3jZTlL6xuAscYacYbTPBdrCea0w+SA1In7bcPf2CIcB3dRyRHmS9ZwURJs1TPTz9QoYAh3pSu3XdAybEn8T1iNgVRpnH2/rI+jqpbWjgoxuKoo0HLGPGx53MAbd3mJN2hUsFOGprO4/4Do3ajj54h7YfMh+Pj/P/79g14gUZTr9qBPjuWm+nhQdZi5oB5sR/KhkxQCMGaMQAjRigEQM0YoBGDNCIARIRERERES3OX7ow1n04qP9tAAAAAElFTkSuQmCC" alt="emergency_icon" class="image-fluid mb-3"> 
+  </div>
+  <div class="share overflow-hidden">
+    <div class="container">
+      <!-- share swiper -->
+      <div class="swiper share-swiper vw-100">
+        <ul class="swiper-wrapper list-unstyled">
+          <li class="swiper-slide col-4">
+            <div class="share-card h-100 d-flex flex-column">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">Zona<i class="material-icons mx-2 fs-7">circle</i>Taipei</span>
+                <p>
+                  ALPHABOX+
+                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Dianne
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide col-4">
+            <div class="share-card h-100 p-10 d-flex flex-column bg-white text-black">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">Lin<i class="material-icons fs-7 mx-2">circle</i>Chiayi</span>
+                <p>
+                  非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide col-4">
+            <div class="share-card h-100 p-10 d-flex flex-column">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">云<i class="material-icons fs-7 mx-2">circle</i>Taipei</span>
+                <p>
+                  我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見
+                  ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Dianne
+              </p>
+            </div>
+          </li>
+          <li class="swiper-slide col-4">
+            <div class="share-card h-100 p-10 d-flex flex-column bg-white text-black">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">Zichi<i class="material-icons fs-7 mx-2">circle</i>Kaohsiung</span>
+                <p>
+                  讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Vito
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row share-scroll align-items-center">
         <div class="col-8">
-          <!-- 加上 position-static 將滾動條的絕對定位設定覆蓋 -->
           <div class="swiper-scrollbar position-static"></div>
         </div>
-        <div class="col-1">
-          <p class="mb-0 text-white">SCROLL</p>
+        <div class="col-4 d-flex align-items-center">
+          <p class="text-white mb-0">SCROLL</p>
         </div>
       </div>
     </div>
   </div>
+  <div class="container">
+    <p class="font-noto font-bold text-white text-base mb-0">若您有任何疑問或建議，歡迎隨時與我們聯絡，我們將竭誠為您解答。</p>
+  </div>
+</div>  
+
+    
+
     <footer class="footer">我是 footer</footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </body>
 </html>
