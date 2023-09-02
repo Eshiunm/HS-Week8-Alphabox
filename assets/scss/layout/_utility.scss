@@ -17,3 +17,8 @@
 .hover-opacity:hover{
     opacity: 0.7;
 }
+
+.placeholder-text-dark::placeholder{
+    color: #000000;
+    font-weight: 700;
+}

@@ -4,11 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <%- include('./layout/google-font'); -%>
+    <%- include('./layout/jquery-cdn'); -%>
     <title>聯絡我們</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <h1>聯絡我們頁面</h1>
+    <div class="bg-primary-dark pt-10">
+      <div class="container pb-10">
+        <h1 class="text-white mb-4 letter-spaing-1em fw-bold Noto-Sans-CJK-TC">聯絡我們</h1>
+        <div class="row justify-content-md-around">
+            <div class="col-md-6">
+              <div class="text-white">
+                <p class="mb-16 fs-4">您的意見與需求對我們至關重要！如果您對 ALPHABOX+ 有任何疑問、建議或需求，請隨時填寫以下表單，我們將在 24 小時內回覆您。您的寶貴意見將幫助我們不斷改進產品與服務，為您帶來更優質的體驗。</p>
+                <h3 class="mb-16 fs-4 fw-bold">我們期待您的來信與來電，竭誠為您解答。讓我們攜手共創更美好的未來！   </h3>
+                <form action="" class="needs-validation" novalidate>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control placeholder-text-dark" placeholder="姓名" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">請輸入姓名</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control placeholder-text-dark" placeholder="EMAIL" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">請輸入Email</div>
+                  </div>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control placeholder-text-dark" placeholder="連絡電話" aria-label="Username" aria-describedby="basic-addon1" required>
+                    <div class="invalid-feedback">請輸入手機號碼</div>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2" class="text-dark fw-bold">Comments</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">送出</button>
+                  <script>
+                    // 每個有 .needs-validation 的 <form> 元素，觸發 submit 事件時，
+                    // 將該元素加入 class 'was-validated'
+                    $('.needs-validation').each(function(index) {
+                      $(this).on('submit', function(e) {
+                        e.preventDefault();
+                        $(this).addClass('was-validated');
+                      });
+                    });
+                  </script>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="text-white">
+                YA
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
