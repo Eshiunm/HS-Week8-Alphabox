@@ -1,5 +1,15 @@
-.carousel-item{
-    // img{
-    //     height: 924px;
-    // }
+//偽元素: https://ithelp.ithome.com.tw/articles/10279532?sc=iThelpR
+.line-hover{
+    &::after{
+        content:' ';
+        display: block;
+        width: 0%;
+        height: 4px;
+        border-bottom:0px solid black;
+        transition: .4s, .2s;
+    }
+    &:hover::after{
+        width: 100%;
+        border-bottom:2px solid black;
+    }
 }
