@@ -1,0 +1,40 @@
+.faq{
+    .accordion-item, 
+    .accordion-button, 
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+        color: #1F0F39;
+    }
+      
+    .accordion-button {
+        color: #1F0F39;
+        padding: 32px 0 40px;
+        border-bottom: 2px;
+        &:focus {
+          box-shadow: none;
+          border-color: #fff;
+        }
+        &::after {
+          content: none;
+        }
+        .addIcon {
+            display: block; // 展開的 icon 預設顯示
+        }
+        .removeIcon {
+            display: none; // 收合的 icon 預設不顯示
+        }
+        
+        &:not(.collapsed) {
+          .addIcon {
+            display: none;
+          }
+          .removeIcon {
+            display: block;
+          }
+        }
+    }
+      
+    .accordion-body {
+        padding: 0;
+    }
+}
