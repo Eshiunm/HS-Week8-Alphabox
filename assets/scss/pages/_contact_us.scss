@@ -1,0 +1,25 @@
+.contact_us_secondpart{
+    @media(max-width:768px){
+        h3{
+            font-size: 28px !important;
+            letter-spacing: 0.3em !important;
+        }
+        span{
+            font-size: 24px !important;
+        }
+    }
+}
+
+.contact_us_product_img{
+    @media(max-width:768px){
+       width: 100% !important;
+    }
+}
+
+.contact_us_li{
+    @media(max-width:768px){
+        width: 50%;
+        font-size: 14px;
+    }
+}
+
