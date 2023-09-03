@@ -1,0 +1,17 @@
+.login-title{
+    position: relative;
+}
+.login-title::before{
+    position: absolute;
+    content: "登入";
+    color: #FFFFFF;
+    left: 0;
+    top: 20%;
+    font-size:64px ;
+    font-weight: 700;
+    letter-spacing: 1em;
+    @media(max-width:992px){
+        display: none;
+    }
+    
+}
