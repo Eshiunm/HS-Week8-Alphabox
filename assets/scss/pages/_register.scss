@@ -1,0 +1,44 @@
+.register_page{
+
+    .divide-line{
+        position: relative;
+    }
+
+    .divide-line::before{
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 55%;
+        width: 45%;
+        height: 1px;
+        background: #FFFFFF;
+    }
+
+    .divide-line::after{
+        position: absolute;
+        content: "";
+        right: 0;
+        top: 55%;
+        width: 45%;
+        height: 1px;
+        background: #FFFFFF;
+    }
+}
+
+.register-title{
+    position: relative;
+}
+.register-title::before{
+    position: absolute;
+    content: "註冊";
+    color: #FFFFFF;
+    left: 0;
+    top: 20%;
+    font-size:64px ;
+    font-weight: 700;
+    letter-spacing: 1em;
+    @media(max-width:992px){
+        display: none;
+    }
+    
+}
