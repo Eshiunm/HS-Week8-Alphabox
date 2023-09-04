@@ -18,3 +18,25 @@
 ) {
   background-image: radial-gradient(50% 50% at 50% 50%, $start-color 0%, $end-color 100%);
 }
+
+//垂直漸層 (由上往下)
+@mixin gradient-y-toBottom(
+  $start-color:$primary,
+  $end-color:$secondary,
+){
+  background-image: linear-gradient(to bottom,$start-color,$end-color);
+}
+//水平漸層 (由左往右)
+@mixin gradient-x-toRight(
+  $start-color:$primary,
+  $end-color:$secondary,
+){
+  background-image: linear-gradient(to right,$start-color,$end-color);
+}
+//水平漸層 (由右往左)
+@mixin gradient-x-toLeft(
+  $start-color:$primary,
+  $end-color:$secondary,
+){
+  background-image: linear-gradient(to left,$start-color,$end-color);
+}
