@@ -1,0 +1,77 @@
+.Noto-Sans-CJK-TC{
+    font-family: 'Noto Sans CJK TC';
+}
+
+.Shrikhand{
+    font-family: 'Shrikhand';
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+.fw-400{
+    font-weight: 400;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+
+.letter-spaing-1em{
+    letter-spacing: 1em;
+}
+
+.border-bottom-dotted{
+    border-bottom: 2px dotted white;
+}
+
+.hover-opacity:hover{
+    opacity: 0.7;
+}
+
+.placeholder-text-dark::placeholder{
+    color: #000000;
+    font-weight: 700;
+}
+
+.opacity-50{
+    opacity: 50%;
+}
+
+.alphaboxCircle{
+    width: 196px;
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-fill-mode: both; 
+}
+@keyframes rotate {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+}
+
+
+.border-radius-24px{
+    border-radius: 24px;
+}
+
+.width-20px{
+    width: 20px;
+}
+
+
+.text-underline{
+    text-decoration: underline !important;
+}
+
+//Header的按鈕
+.btnW{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 0px;
+    background-origin: padding-box;
+    padding: 8px 16px 8px 16px;
+}
