@@ -42,16 +42,13 @@
 
 // nav link客製化
 // codepen: https://codepen.io/christan0612/pen/BvyeaB
-.nav-link{
-    border: 1px solid white;
-    border-radius: 40px;
-    width: 100%;
-    &:hover{
-        background-color: white;
+.nav{
+    .nav-link{
+        border: 1px solid white;
+        border-radius: 40px;
+        width: 100%;
+        &:hover{
+            background-color: white;
+        }
     }
 }
-$nav-link-color:                    white !important;
-$nav-link-hover-color:              $primary !important;
-$nav-pills-border-radius:           40px;
-$nav-pills-link-active-color:       black !important;
-$nav-pills-link-active-bg:          white !important;
