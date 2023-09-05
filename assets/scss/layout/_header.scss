@@ -1,9 +1,28 @@
 .header{
   //background: #6e01f8;
   background: #7000FF;
+
   //手動修改navbar背景才不會有色差
   .navbar{
     background: #7000FF;
+
   }
+  //修改漢堡bar不要有外框
+  .navbar-toggler {
+    border: 0 solid white;
+  }
+  //修改漢堡bar icon顏色
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
 }
 
+.navbar{
+  @media(max-width:991px){
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 0 .5rem 1rem rgba($black, .15);
+ }
+
+
+}
