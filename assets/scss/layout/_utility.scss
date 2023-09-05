@@ -67,12 +67,16 @@
 
 //Header的按鈕
 .btnW{
-    width: auto;
+    width: 100%;
     background-color: white;
     border-radius: 5px;
     border: 0px;
     background-origin: padding-box;
     padding: 8px 16px 8px 16px;
+}
+
+.width-23percent{
+    width: 23.636363636%;
 }
 
 .width-49percent{
