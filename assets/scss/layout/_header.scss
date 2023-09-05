@@ -1,10 +1,9 @@
 .header{
   //background: #6e01f8;
   background: #7000FF;
-  
+  //手動修改navbar背景才不會有色差
+  .navbar{
+    background: #7000FF;
+  }
 }
 
-//手動修改navbar背景才不會有色差
-.navbar{
-  background: #7000FF;
-}
