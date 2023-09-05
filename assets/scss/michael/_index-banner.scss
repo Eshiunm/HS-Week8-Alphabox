@@ -8,5 +8,22 @@
     padding: 0 16px;
 }
 
+.index_banner_products{
+    position: relative;
+    top: 50px;
+}
 
+.home_background{
+    height: 880px;
+    background-image: url("../assets/images/home_background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.what-is-ALPHABOX{
+    height: 1080px;
+    background-image: url("../assets/images/carousel_background.png");
+    background-size: 50% 100%;//寬度為原圖的50% 高度為原圖的100%
+    background-repeat: no-repeat;
+}
