@@ -4,6 +4,9 @@
 }
 
 .button-6E01F8-white{
+    @media(max-width:991px){
+        width: 100%;
+     }
     background-color: #6E01F8;
     color: white;
     width: 57%;
