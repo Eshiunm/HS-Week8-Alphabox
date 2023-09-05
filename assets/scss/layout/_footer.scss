@@ -5,3 +5,15 @@
 .black {
   filter: brightness(0);
 }
+//不知道為甚麼沒有用center就會跑掉，所以用這個icon來限制大小
+.footericon{
+  width: 80px;
+  height: 80px;
+}
+.footertext{
+  @media(max-width:991px){
+    font-size: 40px;
+ }
+ font-size: 32px;
+ 
+}
