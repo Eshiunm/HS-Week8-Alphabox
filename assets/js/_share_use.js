@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/css';
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper_share_use', {
     // slide 間距
     spaceBetween: 24,
     slidesPerView: 3,
