@@ -1,8 +1,8 @@
 <!-- Banner 區塊 -->
-<div class="home_background">
+<div class="home_background ">
     <div class="index_wrap mx-auto pt-5 pt-lg-9">
         <!-- 圖片轉動區塊 -->
-        <div class="mb-8">
+        <div class="mb-14">
             <div class="d-flex justify-content-between pb-2 ">
                 <div class="d-flex flex-column justify-content-end width-23percent border-bottom border-white">
                     <h6 class="text-white Noto-Sans-CJK-TC fw-bold w-100">最新消息！新版本 v15.4 釋出，搶先體驗！</h6>
@@ -18,7 +18,7 @@
         </div>
 
         <!-- 產品圖片區塊 -->
-        <div class="index_banner_products">
+        <div class="index_banner_products mb-10">
             <div class="d-flex justify-content-between align-items-end">
                 <div class="width-23percent">
                     <img class="w-100" src="../assets/images/diane.png" alt="diane">
@@ -32,22 +32,98 @@
                         <img class="width-48percent" src="../assets/images/Felix.png" alt="">
                         <img class="width-48percent" src="../assets/images/Karina.png" alt="">
                     </div>
-                    
                 </div>
                 <div class="width-23percent">
                     <img class="w-100" src="../assets/images/vito.png" alt="vito">
                 </div>
             </div>
-            <div></div>
         </div>
+        <div class="bg-gradient-x-toRight mb-2"></div>
+        <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em">什麼是</h3>
+        <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em mb-4">ALPHABOX+</h3>
+        <div class="full-width-line"></div>
 
-
+        <!-- swiper RWD-->
+        <div class="row align-items-center justify-content-between g-0 text-white">
+            <div class="row align-items-center justify-content-between g-0">
+                <!--  左箭頭  -->
+                <div class="col-1 d-none d-md-block">
+                  <div class="swiper-button-prev">
+                    <img src="https://hackmd.io/_uploads/BJUmHUm6n.png" alt="left arrow" class="img-fluid rotate">
+                  </div>
+                </div>
+                <!--   Slides   -->
+                <div class="col-md-9 mt-3">
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="alphabox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                          <div class="alphabox-intro">
+                            <h3 class="lh-base text-md-end mb-3">
+                              <span class="font-Shrikhand fs-96">01</span><br>
+                              <span class="alphabox-title">立體投影技術</span>
+                            </h3>
+                            <p class="mb-0">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="swiper-slide">
+                          <div class="alphabox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                          <div class="alphabox-intro">
+                            <h3 class="lh-base text-md-end mb-3">
+                              <span class="font-Shrikhand fs-96">02</span><br>
+                              <span class="alphabox-title">立體投影技術</span>
+                            </h3>
+                            <p class="mb-0">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="alphabox d-flex flex-column align-items-start align-items-md-end justify-content-end justify-content-md-center">
+                          <div class="alphabox-intro">
+                            <h3 class="lh-base text-md-end mb-3">
+                              <span class="font-Shrikhand fs-96">03</span><br>
+                              <span class="alphabox-title">立體投影技術</span>
+                            </h3>
+                            <p class="mb-0">透過高科技立體投影技術，讓您感受真實的科技世界。</p>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  右箭頭  -->
+                <div class="col-1 d-none d-md-block">
+                  <div class="swiper-button-next">
+                    <img src="https://hackmd.io/_uploads/BJUmHUm6n.png" alt="right arrow" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <script>
+            const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 5000,
+            },
+                breakpoints: {
+                768: {
+                    autoplay: {
+                    enabled: false,
+                    }
+                }
+                },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+        </script>
     </div>
 </div>
 
-<!-- 什麼是 ALPHABOX+ 區塊 -->
+<!-- 什麼是 ALPHABOX+ 的背景圖區塊 -->
 <div class="bg-primary-dark">
-    <div class="what-is-ALPHABOX bg-primary-dark">
-    
+    <div class="what-is-ALPHABOX">
+        
     </div>
 </div>
