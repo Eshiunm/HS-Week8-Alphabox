@@ -1,0 +1,27 @@
+.divBorder{
+    border-top: 1px solid black;
+    border-bottom: 20px solid black;
+}
+
+.background{
+
+    background-color: black;
+}
+.imageresize30{
+    @media (min-width: 768px) {
+        max-width: 30%;
+        height: auto;
+    }
+    max-width: 100%;
+    height: auto;
+}
+
+.imageresize{
+    @media (min-width: 768px) {
+        max-width: 50%;
+        height: auto;
+    }
+    max-width: 100%;
+    height: auto;
+}
+
