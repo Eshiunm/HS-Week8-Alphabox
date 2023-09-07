@@ -10,6 +10,18 @@
     height: auto;
    
 }
+.imageresize{
+    @media (min-width: 768px) {
+        max-width: 75%;
+        height: auto;
+    }
+    max-width: 100%;
+    height: auto;
+}
+
+.fonts-20{
+    font-size: 20px;
+}
 
 .fonts{
     @media (min-width: 768px) {
