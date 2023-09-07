@@ -21,9 +21,6 @@
     .swiper-wrapper {
       margin-bottom: 0;
       height: 416px;
-      // @include mobile{
-      //   height: 768px;
-      // };
     }
   }
   .share-scroll {
@@ -47,5 +44,8 @@
     background-color: #380c7e;
     color: #ffffff;
     min-height: 351px;
+    @include mobile{
+      margin-bottom: 24px;
+    }
   }
 }
