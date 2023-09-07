@@ -7,6 +7,20 @@
 
     background-color: black;
 }
+
+.fontsChange{
+    @media (min-width: 768px) {
+       font-size: 72px;
+    }
+    font-size: 24px;
+}
+
+.letter-spaing-change{
+    
+        letter-spacing: 1em;
+    
+}
+
 .imageresize30{
     @media (min-width: 768px) {
         max-width: 30%;
