@@ -42,8 +42,8 @@
   }
   .vito{
     //局部CSS變數宣告
-    --imageUrl: url('../assets/images/vito_vertical.png');
-    --imageUrl1: url('../assets/images/vito_square2.png');
+    --imageUrl: url('https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/vito_vertical.png');
+    --imageUrl1: url('https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/vito_square2.png');
     @media (min-width: 768px) {
       background-image: var(--imageUrl);
     }
@@ -52,19 +52,19 @@
   }
   .diane{
       //局部CSS變數宣告
-      --imageUrl: url('../assets/images/diane_vertical.png');
+      --imageUrl: url('https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/diane_vertical.png');
       background-image: var(--imageUrl);
 
   }
   .karina{
     //局部CSS變數宣告
-    --imageUrl: url('../assets/images/karina_verticalgle.png');
+    --imageUrl: url('https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/karina_verticalgle.png');
     background-image: var(--imageUrl);
 
 }
   .felix{
     //局部CSS變數宣告
-    --imageUrl: url('../assets/images/felix_vertical.png');
+    --imageUrl: url('https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/felix_vertical.png');
     background-image: var(--imageUrl);
 
 }
