@@ -45,6 +45,12 @@
 
 .alphaboxCircle{
     width: 196px;
+    @media(max-width:768px){
+        width: 140px;
+    }
+    @media(max-width:576px){
+        width: 120px;
+    }
     animation-name: rotate;
     animation-duration: 4s;
     animation-timing-function: linear;
