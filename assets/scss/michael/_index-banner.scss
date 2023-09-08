@@ -29,6 +29,13 @@ height: 40px;
 .home_background{
   position: relative;//讓home_background裡面的元素有浮在最上層的效果
   height: 880px;
+  @include pad{
+    height: 500px;
+  }
+  @include mobile{
+    position: absolute;//讓home_background裡面的元素有浮在最上層的效果
+    height: auto;
+  }
   @media(max-width:1450px){
     height: 840px;
   }
@@ -59,18 +66,18 @@ height: 40px;
   @media(max-width:700px){
     height: 440px;
   }
-  @media(max-width:600px){
-    height: 420px;
-  }
-  @media(max-width:500px){
-    height: 400px;
-  }
-  @media(max-width:450px){
-    height: 380px;
-  }
-  @media(max-width:400px){
-    height: 360px;
-  }
+  // @media(max-width:600px){
+  //   height: 420px;
+  // }
+  // @media(max-width:500px){
+  //   height: 400px;
+  // }
+  // @media(max-width:450px){
+  //   height: 380px;
+  // }
+  // @media(max-width:400px){
+  //   height: 360px;
+  // }
   background-image: url("https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/home_background.png?raw=true");
   background-position: center;
   background-size: cover;
