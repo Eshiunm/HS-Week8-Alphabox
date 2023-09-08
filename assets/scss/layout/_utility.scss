@@ -1,5 +1,5 @@
 .Noto-Sans-CJK-TC{
-    font-family: 'Noto Sans CJK TC';
+    font-family: 'Noto Sans TC';
 }
 
 .Shrikhand{
@@ -11,7 +11,7 @@
 }
 
 .fw-900{
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .fw-400{
@@ -24,6 +24,10 @@
 
 .letter-spaing-1em{
     letter-spacing: 1em;
+}
+
+.letter-spaing-2em{
+    letter-spacing: 2em;
 }
 
 .letter-spaing-075em{
@@ -49,12 +53,6 @@
 
 .alphaboxCircle{
     width: 196px;
-    @media(max-width:768px){
-        width: 140px;
-    }
-    @media(max-width:576px){
-        width: 120px;
-    }
     animation-name: rotate;
     animation-duration: 4s;
     animation-timing-function: linear;
@@ -136,11 +134,10 @@
     }
     @media(max-width:768px){
         font-size: 20px !important;
-        letter-spacing: .1em;
+        letter-spacing: 1.3em;
     }
-    @media(max-width:490px){
-        font-size: 16px !important;
-        letter-spacing: 0em;
+    @media(max-width:400px){
+        letter-spacing: 1.1em;
     }
 }
 .letter-spacing-from-08em{
@@ -158,7 +155,16 @@
         font-size: 16px !important;
     }
     @media(max-width:768px){
-        display: none;
+        letter-spacing: 0.3em;
+    }
+}
+
+.letter-spacing-from-1em{
+    @media(max-width:768px){
+        letter-spacing: 1em;
+    }
+    @media(max-width:420px){
+        letter-spacing: .8em;
     }
 }
 
