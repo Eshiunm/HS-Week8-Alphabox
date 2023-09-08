@@ -10,10 +10,9 @@
 
 .fontsChange{
     @media (min-width: 768px) {
-        letter-spacing: 0.5em;
        font-size: 72px;
     }
-    letter-spacing: 0.6em;
+    letter-spacing: 0.5em;
     font-size: 24px;
 }
 
@@ -29,6 +28,15 @@
 .imageresize{
     @media (min-width: 768px) {
         max-width: 50%;
+        height: auto;
+    }
+    max-width: 100%;
+    height: auto;
+}
+
+.imageresize100{
+    @media (min-width: 768px) {
+        max-width: 100%;
         height: auto;
     }
     max-width: 100%;

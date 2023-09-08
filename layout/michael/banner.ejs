@@ -2,7 +2,8 @@
 <div class="home_background">
   <div class="index_wrap mx-auto pt-5 pt-lg-9">
       <!-- 圖片轉動區塊 -->
-      <div class="mb-xxl-14 mb-xl-12 mb-lg-10 mb-md-6 mb-4">
+      <!-- 768px 以上時顯示 -->
+      <div class="mb-xxl-14 mb-xl-12 mb-lg-10 mb-md-6 mb-4 d-md-block d-none">
           <div class="d-flex justify-content-between pb-2 ">
               <div class="d-flex flex-column justify-content-end width-23percent border-bottom border-white">
                   <a class="text-white Noto-Sans-CJK-TC fw-bold w-100 d-lg-block d-none" href="news.html">最新消息！新版本 v15.4 釋出，搶先體驗！</a>
@@ -23,9 +24,21 @@
               </div>
           </div>
       </div>
+      <!-- 768px 以下時顯示 -->
+      <div class="d-md-none d-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="border-top border-1 border-white text-white Noto-Sans-CJK-TC fs-4 fw-bold mb-8 pt-2">ALPHABOX+ STUDIO</h1>
+              <img class="alphaboxCircle img-fluid mx-auto mb-6 d-block mb-8" src="../assets/images/circle.png" alt="ALPHABOX+" >
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- 產品圖片區塊 -->
-      <div class="index_banner_products mb-xl-10 mb-md-6 mb-4 d-none d-md-block d-lg-block">
+      <!-- 768px 以上時顯示 -->
+      <div class="index_banner_products mb-xl-10 mb-md-6 mb-4 d-md-block d-none">
           <div class="d-flex justify-content-between align-items-end">
               <div class="width-23percent">
                   <img class="w-100 alphabox-shadow" src="../assets/images/diane.png" alt="diane">
@@ -46,32 +59,40 @@
               </div>
           </div>
       </div>
-      <!-- 產品手機板型 -->
-      <ul class="index_banner_product list-unstyled row d-block d-md-none d-lg-none">
-        <li class="col-12">
-          <img class="img-fluid" src="../assets/images/diane.png" alt="diane">
-        </li>
-        <li class="col-12">
-          <img class="img-fluid" src="../assets/images/felix.png" alt="felix">
-        </li>
-        <li class="col-12">
-          <img class="img-fluid" src="../assets/images/karina.png" alt="karina">
-        </li>
-        <li class="col-12">
-          <img class="img-fluid" src="../assets/images/vito.png" alt="vito">
-        </li>
-      </ul>
-
+      <!-- 768px 以下時顯示 -->
+      <div class="d-md-none d-block">
+        <div class="index_banner_products">
+          <div class="row">
+            <div class="col-12 mb-6">
+              <h3 class="text-center text-white Shrikhand fw-bold letter-spacing-from-185em">ALPHABOX+</h3>
+              <p class="text-white text-center fw-bold fs-4 letter-spacing-from-08em">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="../assets/images/diane_square1.png" alt="Diane 圖片">
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="../assets/images/felix_square1.png" alt="Felix 圖片">
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="../assets/images/Karina_square1.png" alt="Karia 圖片">
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="../assets/images/vito_square1.png" alt="Vito 圖片">
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="bg-gradient-x-toRight mb-2"></div>
+
       <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em d-lg-block d-none">什麼是</h3>
-      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em d-lg-none d-block fs-5">什麼是</h3>
+      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em d-lg-none d-block fs-6">什麼是</h3>
       <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em mb-4 d-lg-block d-none">ALPHABOX+</h3>
-      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em mb-4 d-lg-none d-block fs-4">ALPHABOX+</h3>
+      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spacing-from-1em mb-4 d-lg-none d-block fs-6 letter-spacing-from-1em">ALPHABOX+</h3>
       <div class="full-width-line mb-4"></div>
 
       <!-- swiper RWD-->
-      <div class="mb-md-8 mb-4 row align-items-center justify-content-between g-0 text-white">
+      <div class="mb-md-7 mb-4 row align-items-center justify-content-between g-0 text-white">
           <div class="row align-items-center justify-content-between g-0">
               <!--  左箭頭  -->
               <div class="col-1 d-none d-md-block">
