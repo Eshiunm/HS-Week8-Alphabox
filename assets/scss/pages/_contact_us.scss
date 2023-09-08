@@ -1,8 +1,13 @@
 .contact_us_secondpart{
+    @media(max-width:1000px){
+        h3{
+            letter-spacing: .7em !important;
+        }
+    }
     @media(max-width:768px){
         h3{
-            font-size: 28px !important;
-            letter-spacing: 0.3em !important;
+            font-size: 40px !important;
+            letter-spacing: 1em !important;
         }
         span{
             font-size: 24px !important;
@@ -21,5 +26,56 @@
         width: 50%;
         font-size: 14px;
     }
+    @media(max-width:576px){
+        width: 100%;
+        font-size: 14px;
+    }
 }
 
+.Diane-product{
+    position: relative;
+}
+.Diane-product::before{
+    position: absolute;
+    content: "Diane";
+    top: 47%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+}
+
+.Felix-product{
+    position: relative;
+}
+.Felix-product::before{
+    position: absolute;
+    content: "Felix";
+    top: 47%;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+}
+
+.Karina-product{
+    position: relative;
+}
+.Karina-product::before{
+    position: absolute;
+    content: "Karina";
+    top: 47%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+}
+
+.Vito-product{
+    position: relative;
+}
+.Vito-product::before{
+    position: absolute;
+    content: "Vito";
+    top: 47%;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+}
