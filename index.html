@@ -21,8 +21,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans+TC:wght@100&family=Saira+Extra+Condensed:wght@300&family=Shrikhand&display=swap" rel="stylesheet">    <title>Alphabox 虛擬陪伴平台</title>
-    <script type="module" crossorigin src="/HS-Week8-Alphabox/assets/main-bf8672bd.js"></script>
-    <link rel="stylesheet" href="/HS-Week8-Alphabox/assets/main-86c95ae5.css">
+    <script type="module" crossorigin src="/HS-Week8-Alphabox/assets/main-791b2742.js"></script>
+    <link rel="stylesheet" href="/HS-Week8-Alphabox/assets/main-fb01a598.css">
   </head>
   <body>
     <!-- By 文君 -->
@@ -116,7 +116,8 @@
 <div class="home_background">
   <div class="index_wrap mx-auto pt-5 pt-lg-9">
       <!-- 圖片轉動區塊 -->
-      <div class="mb-xxl-14 mb-xl-12 mb-lg-10 mb-md-6 mb-4">
+      <!-- 768px 以上時顯示 -->
+      <div class="mb-xxl-14 mb-xl-12 mb-lg-10 mb-md-6 mb-4 d-md-block d-none">
           <div class="d-flex justify-content-between pb-2 ">
               <div class="d-flex flex-column justify-content-end width-23percent border-bottom border-white">
                   <a class="text-white Noto-Sans-CJK-TC fw-bold w-100 d-lg-block d-none" href="news.html">最新消息！新版本 v15.4 釋出，搶先體驗！</a>
@@ -137,9 +138,21 @@
               </div>
           </div>
       </div>
+      <!-- 768px 以下時顯示 -->
+      <div class="d-md-none d-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="border-top border-1 border-white text-white Noto-Sans-CJK-TC fs-4 fw-bold mb-8">ALPHABOX+ STUDIO</h1>
+              <img class="alphaboxCircle img-fluid mx-auto mb-6 d-block mb-8" src="/HS-Week8-Alphabox/assets/circle-10d6fa5f.png" alt="ALPHABOX+" >
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- 產品圖片區塊 -->
-      <div class="index_banner_products mb-xl-10 mb-md-6 mb-4">
+      <!-- 768px 以上時顯示 -->
+      <div class="index_banner_products mb-xl-10 mb-md-6 mb-4 d-md-block d-none">
           <div class="d-flex justify-content-between align-items-end">
               <div class="width-23percent">
                   <img class="w-100 alphabox-shadow" src="/HS-Week8-Alphabox/assets/diane-2a2ea242.png" alt="diane">
@@ -160,15 +173,40 @@
               </div>
           </div>
       </div>
+      <!-- 768px 以下時顯示 -->
+      <div class="d-md-none d-block">
+        <div class="index_banner_products">
+          <div class="row">
+            <div class="col-12 mb-6">
+              <h3 class="text-center text-white Shrikhand fw-bold letter-spacing-from-185em">ALPHABOX+</h3>
+              <p class="text-white text-center fw-bold fs-4 letter-spacing-from-08em">擁抱未來科技，專屬您的3D立體投影陪伴機器人</p>
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="/HS-Week8-Alphabox/assets/diane_square1-9f0571f9.png" alt="Diane 圖片">
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="/HS-Week8-Alphabox/assets/felix_square1-48e53108.png" alt="Felix 圖片">
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="/HS-Week8-Alphabox/assets/Karina_square1-3af8d52b.png" alt="Karia 圖片">
+            </div>
+            <div class="mb-6">
+              <img class="w-100 alphabox-shadow" src="/HS-Week8-Alphabox/assets/vito_square1-4497c642.png" alt="Vito 圖片">
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="bg-gradient-x-toRight mb-2"></div>
+
       <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em d-lg-block d-none">什麼是</h3>
-      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em d-lg-none d-block fs-5">什麼是</h3>
+      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em d-lg-none d-block fs-6">什麼是</h3>
       <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em mb-4 d-lg-block d-none">ALPHABOX+</h3>
-      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spaing-1em mb-4 d-lg-none d-block fs-4">ALPHABOX+</h3>
+      <h3 class="text-white Noto-Sans-CJK-TC fw-bold letter-spacing-from-1em mb-4 d-lg-none d-block fs-6 letter-spacing-from-1em">ALPHABOX+</h3>
       <div class="full-width-line mb-4"></div>
 
       <!-- swiper RWD-->
-      <div class="mb-md-8 mb-4 row align-items-center justify-content-between g-0 text-white">
+      <div class="mb-md-7 mb-4 row align-items-center justify-content-between g-0 text-white">
           <div class="row align-items-center justify-content-between g-0">
               <!--  左箭頭  -->
               <div class="col-1 d-none d-md-block">
@@ -333,7 +371,7 @@
   <div class="share overflow-hidden">
     <div class="container">
       <!-- share swiper -->
-      <div class="swiper_share_use share-swiper vw-100">
+      <div class="swiper_share_use share-swiper d-none d-lg-block vw-100">
         <ul class="swiper-wrapper list-unstyled">
           <li class="swiper-slide col-12 col-lg-4">
             <div class="share-card h-100 d-flex flex-column">
@@ -403,6 +441,70 @@
           <p class=" mb-0">SCROLL</p>
         </div>
       </div>
+      <!-- 手機板型 -->
+      <div class="d-block d-lg-none">
+        <ul class="list-unstyled">
+          <li class="col-12 mb-10">
+            <div class="share-card h-100 d-flex flex-column">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">Zona<i class="material-icons mx-2 fs-7">circle</i>Taipei</span>
+                <p class="font-bold">
+                  ALPHABOX+
+                  真的很夯！每次把它打開，感覺就像是身臨其境一樣。它陪我度過了很多寂寞的時光，讓我在家裡也能享受到優質的休閒時光。
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Dianne
+              </p>
+            </div>
+          </li>
+          <li class="col-12 mb-10">
+            <div class="share-card h-100 p-10 d-flex flex-column bg-white text-black">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">Lin<i class="material-icons fs-7 mx-2">circle</i>Chiayi</span>
+                <p class="font-bold">
+                  非常推薦！它的畫面清晰度超高，真的讓我驚艷不已。而且它還可以和我互動，感覺就像是有個真實的朋友在身邊。
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Felix
+              </p>
+            </div>
+          </li>
+          <li class="col-12 mb-10">
+            <div class="share-card h-100 p-10 d-flex flex-column">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">云<i class="material-icons fs-7 mx-2">circle</i>Taipei</span>
+                <p class="font-bold">
+                  我之前一直在找能陪伴我度過空虛時光的好夥伴，直到遇見
+                  ALPHABOX+。它不僅僅是一個機器人，更像是一個真正的朋友，陪著我分享喜怒哀樂。真的很讚！
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Dianne
+              </p>
+            </div>
+          </li>
+          <li class="col-12 mb-10">
+            <div class="share-card h-100 p-10 d-flex flex-column bg-white text-black">
+              <div class="flex-grow-1">
+                <span class="d-inline-block mb-4">Zichi<i class="material-icons fs-7 mx-2">circle</i>Kaohsiung</span>
+                <p class="font-bold">
+                  讓我在忙碌的工作之餘，也能找到休閒的樂趣。它的互動功能非常有趣，讓我在短短的時間內就愛上了它。給它一百分！
+                </p>
+              </div>
+              <p class="d-flex align-items-center">
+                <i class="material-icons fs-6 me-4">circle</i><i class="material-icons fs-6 me-4">circle</i>
+                ALPHABOX+ Vito
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 手機板型 -->
     </div>
   </div>
   <div class="container">
