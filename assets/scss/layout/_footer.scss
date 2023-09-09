@@ -6,7 +6,7 @@
   filter: brightness(0);
 }
 .footertext{
-  @media(max-width:991px){
+  @media(max-width:992px){
     font-size: 40px;
  }
  font-size: 32px;
@@ -15,5 +15,24 @@
 .footericon{
   width: 80px;
   height: 80px;
-
+ 
 }
+.changesize{
+  @media(max-width:992px){
+    padding-left: 20px;;
+ }
+ 
+}
+  //修改漢堡bar不要有外框
+  .navbar-toggler {
+    border: 0 solid white;
+  }
+footer{
+  .navbar{
+      @media(max-width:992px){
+        border-bottom: 0px solid #ffffff;
+        box-shadow: 0rem 0rem rgba($black, .15);
+    }
+    }
+
+  }
