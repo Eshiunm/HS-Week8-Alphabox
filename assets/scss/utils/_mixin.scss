@@ -10,6 +10,11 @@
         @content;
   }
 }
+@mixin lg{
+  @media(max-width: 991px){
+    @content;
+  }
+}
 
 //background
 @mixin radial-gradient(

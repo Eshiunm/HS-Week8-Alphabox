@@ -34,6 +34,17 @@
             border-bottom:2px solid black;
         }
     }
+    @include lg{
+        border-bottom:2px solid black;
+        &::after{
+            width: 100%;
+            border-bottom:2px solid black;
+        }
+        &:hover::after{
+            width: 100%;
+            border-bottom:2px solid black;
+        }
+    }
 }
 
 .carousel-control-prev{
