@@ -7,6 +7,12 @@ const swiper = new Swiper('.swiper_share_use', {
     
     breakpoints: { 
       1920:{
+        spaceBetween: 24,
+        slidesPerView: 3,
+        width: 1320
+      },
+      1400:{
+        spaceBetween: 24,
         slidesPerView: 3,
         width: 1320
       },
