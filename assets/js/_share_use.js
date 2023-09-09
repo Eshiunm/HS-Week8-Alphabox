@@ -16,6 +16,11 @@ const swiper = new Swiper('.swiper_share_use', {
         slidesPerView: 3,
         width: 1320
       },
+      1200:{
+        spaceBetween: 24,
+        slidesPerView: 3,
+        width: 1186
+      },
       992:{
         // slide 間距
         spaceBetween: 24,
