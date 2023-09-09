@@ -1,4 +1,4 @@
-.bg-gradient-y-toBottom{
+bg-gradient-y-toBottom{
   //gradient-y-toBottom() 放在 _mixin.scss
   @include gradient-y-toBottom();
 }
@@ -23,7 +23,10 @@
 .home_background{
   position: relative;//讓home_background裡面的元素有浮在最上層的效果
   height: 880px;
-
+  background-image: url("https://github.com/Eshiunm/HS-Week8-Alphabox/blob/master/assets/images/home_background.png?raw=true");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   @media(max-width:1450px){
     height: 840px;
   }
