@@ -26,6 +26,17 @@
   .share-scroll {
     margin-bottom: 124px;
   }
+
+  &-card {
+    padding: 40px;
+    background-color: #380c7e;
+    color: #ffffff;
+    min-height: 351px;
+    @include mobile{
+      margin-bottom: 24px;
+      padding: 12px;
+    }
+  }
 }
 
 /* 整個滾動條的背景顏色 */
@@ -35,16 +46,4 @@
 /* 滾動條可拖曳區塊的顏色 */
 .swiper-scrollbar-drag {
   background-color: #ffffff !important;
-}
-  
-.share {
-  &-card {
-    padding: 40px;
-    background-color: #380c7e;
-    color: #ffffff;
-    min-height: 351px;
-    @include mobile{
-      margin-bottom: 24px;
-    }
-  }
 }

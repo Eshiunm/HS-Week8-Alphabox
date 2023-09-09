@@ -6,11 +6,42 @@ import 'swiper/css';
 const swiper = new Swiper('.swiper_share_use', {
     
     breakpoints: { 
+      1920:{
+        spaceBetween: 24,
+        slidesPerView: 3,
+        width: 1320
+      },
+      1400:{
+        spaceBetween: 24,
+        slidesPerView: 3,
+        width: 1320
+      },
+      1200:{
+        spaceBetween: 24,
+        slidesPerView: 3,
+        width: 1186
+      },
       992:{
         // slide 間距
         spaceBetween: 24,
         slidesPerView: 3,
-        direction: "horizontal"
+        direction: "horizontal",
+        width: 980
+      }
+      ,
+      784:{
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 3,
+        direction: "horizontal",
+        width: 772
+      },
+      576:{
+        // slide 間距
+        spaceBetween: 24,
+        slidesPerView: 3,
+        direction: "horizontal",
+        width: 564
       }
     },
     // Scrollbar 滑鼠中鍵滾輪可滑動
