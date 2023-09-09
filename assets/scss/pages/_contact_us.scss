@@ -43,7 +43,6 @@
     color: white;
     font-size: 40px;
 }
-
 .Felix-product{
     position: relative;
 }
@@ -55,7 +54,6 @@
     color: white;
     font-size: 40px;
 }
-
 .Karina-product{
     position: relative;
 }
@@ -67,11 +65,56 @@
     color: white;
     font-size: 40px;
 }
-
 .Vito-product{
     position: relative;
 }
 .Vito-product::before{
+    position: absolute;
+    content: "Vito";
+    top: 47%;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+}
+
+
+.Diane-product-mobile{
+    position: relative;
+}
+.Diane-product-mobile::before{
+    position: absolute;
+    content: "Diane";
+    top: 47%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+}
+.Felix-product-mobile{
+    position: relative;
+}
+.Felix-product-mobile::before{
+    position: absolute;
+    content: "Felix";
+    top: 47%;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+}
+.Karina-product-mobile{
+    position: relative;
+}
+.Karina-product-mobile::before{
+    position: absolute;
+    content: "Karina";
+    top: 47%;
+    left: 5%;
+    color: white;
+    font-size: 40px;
+}
+.Vito-product-mobile{
+    position: relative;
+}
+.Vito-product-mobile::before{
     position: absolute;
     content: "Vito";
     top: 47%;
